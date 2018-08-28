@@ -1,0 +1,35 @@
+/* Extra-small devices */
+@media screen and (max-width: 600px) {
+  * {
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+}
+
+/* Small devices */
+@media screen and (min-width: 600px) {
+
+}
+
+/* Medium devices */
+@media screen and (min-width: 768px) {
+  * {
+    background-color: rgba(0, 255, 0, 0.5);
+  }
+
+}
+
+/* Large devices */
+@media screen and (min-width: 992px) {
+  * {
+    background-color: rgba(0, 0, 255, 0.5);
+  }
+}
+
+/* Extra-large devices */
+@media screen and (min-width: 1200px) {
+ * {
+   width: 992px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+}
