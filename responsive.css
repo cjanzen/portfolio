@@ -1,19 +1,21 @@
 /* Extra-small devices */
 @media screen and (max-width: 600px) {
   * {
-    background-color: rgba(255, 0, 0, 0.5);
+    /* background-color: rgba(255, 0, 0, 0.5); */
   }
 }
 
 /* Small devices */
-@media screen and (min-width: 600px) {
-
+@media screen and (min-width: 601px) {
+  * {
+    background-color: #91DEEC;
+  }
 }
 
 /* Medium devices */
 @media screen and (min-width: 768px) {
   * {
-    background-color: rgba(0, 255, 0, 0.5);
+    background-color: #C1EEFD;
   }
 
 }
@@ -21,7 +23,7 @@
 /* Large devices */
 @media screen and (min-width: 992px) {
   * {
-    background-color: rgba(0, 0, 255, 0.5);
+    background-color: #96B9B6;
   }
 }
 

@@ -1,4 +1,44 @@
 * {
- font-family: fantasy; serif;
- box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: AliceBlue;
+}
+
+.resp_img_logo {
+  width: 10%;
+  max-width: 100%
+  height: auto;
+  vertical-align: middle;
+}
+
+header.h1 {
+  color: Tomato;
+}
+
+
+/* TODO:  Flexbox styling goes here? */
+
+/* Style the navigation */
+nav {
+  background-color: LightSeaGreen;
+}
+
+/* Style the navigation menu */
+nav.menu {
+}
+
+/* Style the content */
+
+/* Style the content */
+footer {
+  color: #41442F;
+  padding: 5px;
+  text-align: center;
 }
