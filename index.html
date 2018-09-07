@@ -18,50 +18,91 @@
 	* {
 	padding: 0px;
 	box-sizing: border-box;
+  font-family: Georgia;
 
 	}
 
 	html, body {
-		font-family: sans-serif;
 	}
 
 /* Header styling */
-	header.page_header {
-		border: 2px solid red;
+  header.page_header {
+		border: 2px solid #201313;
 		display: block;
 		margin-top:10px;
-    padding: 30px;
+    		padding: 30px;
 		width: 100%;
-		background-color: LightBlue;
+		background-color: #f5efef;
 		text-align: right;
-	}
+}
 
-  .resp_img_logo {
+  .logo {
 	  width: 15%;
-		max-width: 100%;
+	  max-width: 100%;
 	  display: inline;
-		vertical-align: middle;
-		float: left;
+	  vertical-align: middle;
+	  float: left;
 	}
 
-	header > h2 {
-    color: Orange;
-	}
+  header * {
+        font-family: "Book Antiqua";
+        color: #603939;
+}
+
+header > h2 {
+  font-weight: bold;
+  font-variant: small-caps;
+  }
 
   header > h3 {
-    color: Orange;
-  }
+  font-style: italic;
+}
 /* End header styling */
 
 
 
 /* Nav styling */
 	nav {
-		border: 2px solid red;
+		border: 2px solid #201313;
     display: block;
-    background: yellow;
-    padding: 20px;
+    background: Seashell;
+    overflow: hidden; /* keeps items in the element */
 	}
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline-block; /* arrange horizontally w/out using float */
+    list-style-type: none;; /* removes bullets */
+
+/* https://www.adam-bray.com/2017/02/17/easy-html-5-css-3-navigation-menu/ but don't know if I need yet
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    */
+  }
+
+  nav >ul > li > a {
+    color: black;
+    display: block;
+    line-height: 48px;
+    padding: 0 24px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: mistyrose;
+  }
+
+  .active {
+    background-color: #cfafaf;
+    color: white;
+  }
 
 /* End nav body styling */
 
@@ -69,8 +110,13 @@
 
 /* Section styling */
 	section {
-		border: 2px solid red;
+		border: 2px solid #201313;
+    padding: 24px 24px 24px 24px;
 	}
+
+  section > h2 {
+    text-align: center;
+  }
 
 /* End section styling */
 
@@ -79,9 +125,10 @@
 
 /* Footer styling */
 	footer.page_footer {
-		border: 2px solid red;
-    background-color: pink;
+		border: 2px solid #201313;
+    background-color: peachpuff;
     padding: 10px;
+    padding-bottom: 20px;
     width: 100%;
 		text-align: center;
 	}
@@ -96,27 +143,37 @@
 
   <!-- Header container -->
   <header class="page_header">
-    <h1><a href="#"><img src="images/logo.jpg" alt="Personal logo" class="resp_img_logo"/></a></h1>
-    <h2>Name</h2>
-    <h3>Headline</h3>
+    <h1><a href="#"><img src="images/logo.jpg" alt="Personal logo" class="logo"/></a></h1>
+    <h2>ME! Not Elizabeth</h2>
+    <h3>Through letters, whatever of good or bad was to be told would be communicated, and every succeeding day was expected to bring some news of importance</h3>
   </header>
 
   <!-- Nav container -->
   <nav class="menu">
     <ul>
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#">Work</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Resume</a></li>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#resume">Resume</a></li>
     </ul>
   </nav>
 
   <!-- Main container -->
   <main>
-    <section class="work">
-      <h2>Section Heading</h2>
-      <p>Body</p>
+    <section><a name="work"></a>
+      <h2>Work</h2>
+      <p>Stop talking, brain thinking. Hush. You know how I sometimes have really brilliant ideas? You know when grown-ups tell you 'everything's going to be fine' and you think they're probably lying to make you feel better?</p>
+      <p>Quotes from <a href="http://fillerama.io" target="_blank">http://fillerama.io</a></p>
     </section>
+    <section><a name="about"></a>
+      <h2>About</h2>
+      <p>Annihilate? No. No violence. I won't stand for it. Not now, not ever, do you understand me?! I'm the Doctor, the Oncoming Storm - and you basically meant beat them in a football match, didn't you? The way I see it, every life is a pile of good things and bad things.…hey.…the good things don't always soften the bad things; but vice-versa the bad things don't necessarily spoil the good things and make them unimportant.</p>
+    </section>
+    <section><a name="resume"></a>
+      <h2>Resume</h2>
+      <p>I'm nobody's taxi service; I'm not gonna be there to catch you every time you feel like jumping out of a spaceship. No, I'll fix it. I'm good at fixing rot. Call me the Rotmeister. No, I'm the Doctor. Don't call me the Rotmeister.</p>
+    </section>
+
   </main>
 
   <!-- Footer container -->
