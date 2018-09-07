@@ -1,26 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  font-family: "Helvetica Neue", sans-serif;
-}
-
-/* Style the header */
-header {
-  background-color: AliceBlue;
-}
-
-.resp_img_logo {
-  width: 10%;
-  max-width: 100%
-  height: auto;
-  vertical-align: middle;
-}
-
-header.h1 {
-  color: Tomato;
-}
+/* Copy from html doc */
 
 
 /* TODO:  Flexbox styling goes here? */

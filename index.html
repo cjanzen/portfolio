@@ -8,56 +8,127 @@
   <meta name="author" content="C. Janzen">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+ <!--
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="responsive.css">
+ -->
+<style>
+
+/* Basic styling */
+	* {
+	padding: 0px;
+	box-sizing: border-box;
+
+	}
+
+	html, body {
+		font-family: sans-serif;
+	}
+
+/* Header styling */
+	header.page_header {
+		border: 2px solid red;
+		display: block;
+		margin-top:10px;
+    padding: 30px;
+		width: 100%;
+		background-color: LightBlue;
+		text-align: right;
+	}
+
+  .resp_img_logo {
+	  width: 15%;
+		max-width: 100%;
+	  display: inline;
+		vertical-align: middle;
+		float: left;
+	}
+
+	header > h2 {
+    color: Orange;
+	}
+
+  header > h3 {
+    color: Orange;
+  }
+/* End header styling */
+
+
+
+/* Nav styling */
+	nav {
+		border: 2px solid red;
+    display: block;
+    background: yellow;
+    padding: 20px;
+	}
+
+/* End nav body styling */
+
+/* Main body styling */
+
+/* Section styling */
+	section {
+		border: 2px solid red;
+	}
+
+/* End section styling */
+
+/* End main body styling */
+
+
+/* Footer styling */
+	footer.page_footer {
+		border: 2px solid red;
+    background-color: pink;
+    padding: 10px;
+    width: 100%;
+		text-align: center;
+	}
+
+/* End Footer styling */
+</style>
+
 </head>
 
 <body>
 
+
   <!-- Header container -->
-  <!-- TODO:
-    * DONE: Add CSS entry for container
-    * Style css
-  -->
-  <header>
-    <img src="images/logo.jpg" alt="Personal logo" class="resp_img_logo"/>
-    <h1>Name</h1>
-    <aside>Headline</aside>
+  <header class="page_header">
+    <h1><a href="#"><img src="images/logo.jpg" alt="Personal logo" class="resp_img_logo"/></a></h1>
+    <h2>Name</h2>
+    <h3>Headline</h3>
   </header>
 
   <!-- Nav container -->
-  <!-- TODO:
-    * Add CSS entry for container
-    * Style css
-  -->
-<nav class="menu">
-  <ul>
-    <li><a href="#">Work</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Resume</a></li>
-  </ul>
+  <nav class="menu">
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Resume</a></li>
+    </ul>
   </nav>
 
   <!-- Main container -->
-  <!-- TODO:
-    * Add CSS entry for container
-    * Style css
-  -->
   <main>
     <section class="work">
+      <h2>Section Heading</h2>
+      <p>Body</p>
     </section>
-
   </main>
 
   <!-- Footer container -->
-  <!-- TODO:
-    * Add CSS entry for container
-    * Style css
-  -->
-  <footer>
-    <p>Oooh, surprise! It's a footer. @1892</p>
+  <footer class="page_footer">
+    <p> &copy;<time>2018</time> CJ</br>
+    Oooh, surprise! A footer. At least 20cm long.</p>
+    <address>
+      Questions? Comments. Suggestions!</br>
+      Contact us at:</br>
+      Somewhere, USA
+    </address>
   </footer>
-
 
 
 </body>
