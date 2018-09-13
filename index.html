@@ -8,162 +8,15 @@
   <meta name="author" content="C. Janzen">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
- <!--
+
   <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="responsive.css">
- -->
-<style>
-
-/* Basic styling */
-	* {
-	padding: 0px;
-	box-sizing: border-box;
-  font-family: Georgia;
-
-	}
-
-	html, body {
-	}
-
-/* Header styling */
-  header.page_header {
-		border: 2px solid #201313;
-		display: block;
-	        overflow: hidden;
-		margin-top:10px;
-    		padding: 30px;
-		width: 100%;
-		background-color: #f5efef;
-		text-align: right;
-	  overflow: hidden;
-
-}
-
-  .logo {
-	  width: 15%;
-	  max-width: 100%;
-	  display: inline;
-	  vertical-align: middle;
-	  float: left;
-	}
-
-  header * {
-        font-family: "Book Antiqua";
-        color: #603939;
-}
-
-header > h2 {
-  font-weight: bold;
-  font-variant: small-caps;
-  }
-
-  header > h3 {
-  font-style: italic;
-}
-/* End header styling */
-
-
-
-/* Nav styling */
-	nav {
-		border: 2px solid #201313;
-    display: block;
-    background: Seashell;
-    overflow: hidden; /* keeps items in the element */
-	}
-
-  nav ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  nav ul li {
-    display: inline-block; /* arrange horizontally w/out using float */
-    list-style-type: none;; /* removes bullets */
-
-  }
-
-  nav >ul > li > a {
-    color: black;
-    display: block;
-    line-height: 48px;
-    padding: 0 24px;
-    text-decoration: none;
-  }
-
-  a:hover {
-    background-color: mistyrose;
-  }
-
-  .active {
-    background-color: #cfafaf;
-    color: white;
-  }
-
-/* End nav body styling */
-
-/* Main body styling */
-
-/* Section styling */
-	section {
-		border: 2px solid #201313;
-    padding: 24px 24px 24px 24px;
-	}
-
-  section > h2 {
-    /* text-align: center; */
-  }
-
-  .flex-container {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .flex-container > div {
-    background-color: #f5efef;
-    width: 25%;
-    margin: 20px;
-    text-align: center;
-  }
-
-  .project_image {
-    width: 75%;
-    max-width: 100%;
-  }
-
-  .project_info {
-    /* START */
-  }
-/* End section styling */
-
-/* End main body styling */
-
-
-/* Footer styling */
-	footer.page_footer {
-		border: 2px solid #201313;
-    background-color: peachpuff;
-    padding: 10px;
-    padding-bottom: 20px;
-    width: 100%;
-		text-align: center;
-	}
-
-/* End footer styling */
-</style>
+  <!-- <link rel="stylesheet" href="responsive.css"> -->
 
 </head>
 
 <body>
-
-
   <!-- Header container -->
-  <header class="page_header">
+  <header class="page-header">
     <h1><a href="#"><img src="images/logo.jpg" alt="Personal logo" class="logo"/></a></h1>
     <h2>ME! Not Elizabeth</h2>
     <h3>Through letters, whatever of good or bad was to be told would be communicated, and every succeeding day was expected to bring some news of importance</h3>
@@ -175,65 +28,66 @@ header > h2 {
       <li><a href="#home" class="active">Home</a></li>
       <li><a href="#work">Work</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#resume">Resume</a></li>
+      <!-- <li><a href="#resume">Resume</a></li> -->
     </ul>
   </nav>
 
   <!-- Main container -->
   <main>
-    <section><a name="work"></a>
+    <section><a id="work"></a>
       <h2>Work</h2>
 
       <p>Stop talking, brain thinking. Hush. You know how I sometimes have really brilliant ideas? You know when grown-ups tell you 'everything's going to be fine' and you think they're probably lying to make you feel better?</p>
       <p>Quotes from <a href="http://fillerama.io" target="_blank">http://fillerama.io</a></p>
 
       <div class="flex-container">
-        <div class="project_info">
-          <img src="images/Avatar_VenetianLettersonPavement.jpg" alt="Temp image" class="project_image"/>
+        <div class="project">
+          <img src="images/Avatar_VenetianLettersonPavement.jpg" alt="Temp image"/>
           <h3>Project Title</h3>
           <a href="https://github.com/cjanzen/portfolio">https://github.com/cjanzen/portfolio</a>
         </div>
-        <div class="project_info">
-          <img src="images/Avatar_World.png" alt="Temp image" class="project_image"/>
+        <div class="project">
+          <img src="images/Avatar_World.png" alt="Temp image"/>
           <h3>Project Title</h3>
           <a href="https://github.com/cjanzen/portfolio">https://github.com/cjanzen/portfolio</a>
         </div>
-        <div class="project_info">
-          <img src="images/logo.jpg" alt="Temp image" class="project_image"/>
+        <div class="project">
+          <img src="images/logo.jpg" alt="Temp image"/>
           <h3>Project Title</h3>
           <a href="https://github.com/cjanzen/portfolio">https://github.com/cjanzen/portfolio</a>
         </div>
-        <div class="project_info">
-          <img src="images/PaperBird.jpeg" alt="Temp image" class="project_image"/>
+        <div class="project">
+          <img src="images/PaperBird.jpeg" alt="Temp image"/>
           <h3>Project Title</h3>
           <a href="https://github.com/cjanzen/portfolio">https://github.com/cjanzen/portfolio</a>
         </div>
-        <div class="project_info">
-          <img src="images/Woohoo.png" alt="Temp image" class="project_image"/>
+        <div class="project">
+          <img src="images/Woohoo.png" alt="Temp image"/>
           <h3>Project Title</h3>
           <a href="https://github.com/cjanzen/portfolio">https://github.com/cjanzen/portfolio</a>
         </div>
       </div>
 
     </section>
-    <section><a name="about"></a>
+    <section><a id="about"></a>
       <h2>About</h2>
       <p>Annihilate? No. No violence. I won't stand for it. Not now, not ever, do you understand me?! I'm the Doctor, the Oncoming Storm - and you basically meant beat them in a football match, didn't you? The way I see it, every life is a pile of good things and bad things.…hey.…the good things don't always soften the bad things; but vice-versa the bad things don't necessarily spoil the good things and make them unimportant.</p>
     </section>
-    <section><a name="resume"></a>
+
+    <!-- <section><a id="resume"></a>
       <h2>Resume</h2>
       <p>I'm nobody's taxi service; I'm not gonna be there to catch you every time you feel like jumping out of a spaceship. No, I'll fix it. I'm good at fixing rot. Call me the Rotmeister. No, I'm the Doctor. Don't call me the Rotmeister.</p>
-    </section>
+    </section> -->
 
   </main>
 
   <!-- Footer container -->
-  <footer class="page_footer">
-    <p> &copy;<time>2018</time> CJ</br>
-    Oooh, surprise! A footer. At least 20cm long.</p>
+  <footer class="page-footer">
+    <p> ©<time>2018</time> CJ<br>
+    Oooh, surprise! A footer. At least 30.48cm long.</p>
     <address>
-      Questions? Comments. Suggestions!</br>
-      Contact:</br>
+      Questions? Comments. Suggestions!<br>
+      Contact:<br>
       Somewhere, USA
     </address>
   </footer>
