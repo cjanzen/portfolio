@@ -9,20 +9,26 @@
 
   html,
   body {
-    font-family: 'Helvetica Neue', sans-serif;
   }
 
-  h1, h2, h3 {
+  h1, h2, h3, h4, h5, h6 {
     color: #603939;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
   }
 
-  p {
+  p, a, li {
     color: #603939;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
   }
 
 /* Header styling */
   header * {
-    font-family: 'Book Antiqua';
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    font-variant: small-caps;
+    font-weight: 700;
   }
 
   .page-header {
@@ -113,7 +119,7 @@
   }
 
   .project {
-    background-color: #f5efef;
+    /* background-color: #f5efef; */
     margin: 20px;
     text-align: center;
     width: 25%;
@@ -131,8 +137,8 @@
     width: 75%;
   }
 
-  .project-info {
-    /* START */
+  .project a {
+    font-size: small;
   }
 /* End section styling */
 
@@ -143,7 +149,9 @@
   .page-footer {
     color: #603939;
     background-color: #f5efef;
+    font-size: 15px;
     padding: 10px;
+    padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
     width: 100%;
