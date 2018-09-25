@@ -1,5 +1,4 @@
 /* Basic styling */
-  /* TODO: Collapse related CSS properties into shorthand, e.g., all font-family items onto one line. */
 
   * {
   box-sizing: border-box;
@@ -23,17 +22,19 @@
     font-weight: 400;
   }
 
-/* Header styling */
-  header * {
-    font-family: "Lato", sans-serif;
-    font-size: 30px;
-    font-variant: small-caps;
-    font-weight: 700;
+  hr {
+    background-color: #dfd7d7;
+    border: 0 none;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
   }
 
+/* Header styling */
   .page-header {
-    background-color: #f5efef;
     display: block;
+    font-weight: 100;
     overflow: hidden;
     padding: 30px;
     text-align: right;
@@ -45,25 +46,33 @@
     float: left;
     max-width: 100%;
     vertical-align: middle;
-    width: 15%;
+    width: 100px;
+  }
+
+  header h1 {
+    display: block;
+    font-size: 2em;
+    font-weight: 100;
+    text-align: right;
+    text-transform: uppercase;
   }
 
   header > h2 {
-    font-variant: small-caps;
-    font-weight: bold;
+    font-size: .8em;
+    margin: 9px 0 9px 0;
+    text-align: right;
+    text-transform: uppercase;
   }
 
-  header > h3 {
-  font-style: italic;
-}
 /* End header styling */
 
 
-
-/* Nav styling */
+/* Phase 2
+Nav styling
   nav {
-    background: Seashell;
-    border: 2px solid #603939;
+    background: #f5efef;
+    border-top: 2px double #603939;
+    border-bottom: 2px double #603939;
     display: block;
   }
 
@@ -91,17 +100,28 @@
   .active {
     background-color: #cfafaf;
     color: white;
-  }
+  } */
 
 /* End nav body styling */
 
 /* Main body styling */
+  .divider-image {
+    display: block;
+    max-width: 100%
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
 
 /* Section styling */
+
+
   section {
     padding: 24px 24px 24px 24px;
-    border-bottom: 2px solid #603939;
   }
+
 
   section > h2 {
     padding-bottom: 20px;
@@ -119,7 +139,6 @@
   }
 
   .project {
-    /* background-color: #f5efef; */
     margin: 20px;
     text-align: center;
     width: 25%;
@@ -147,14 +166,13 @@
 
 /* Footer styling */
   .page-footer {
-    color: #603939;
-    background-color: #f5efef;
-    font-size: 15px;
-    padding: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
+    padding: 10px 10px 20px 10px;
     width: 100%;
   }
 
+  footer p {
+    color: #7f6060;
+    font-size: .8em;
+    text-align: center;
+  }
 /* End footer styling */
